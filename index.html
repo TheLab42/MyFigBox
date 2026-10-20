@@ -5,7 +5,7 @@
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
 <title>MyFigBox – Privacy Policy</title>
-<meta content="MyFigBox privacy policy in 15 languages for iOS and Android." name="description"/>
+<meta content="MyFigBox privacy policy in 16 languages for iOS and Android." name="description"/>
 <style>
     :root {
       color-scheme: light dark;
@@ -95,6 +95,7 @@
 <option value="fr">Français</option>
 <option value="en">English</option>
 <option value="de">Deutsch</option>
+<option value="nl">Nederlands</option>
 <option value="pl">Polski</option>
 <option value="it">Italiano</option>
 <option value="es">Español</option>
@@ -134,6 +135,18 @@
 <h3>Käufe und Aktionscodes</h3><p>In-App-Käufe und etwaige Aktionscodes werden unter iOS von Apple (App Store) bzw. unter Android von Google (Google Play) verwaltet. Lab 42 erhebt oder speichert keine Zahlungsdaten.</p>
 <h3>Konten und Drittanbieter</h3><p>Ein MyFigBox-Konto ist nicht erforderlich. Sicherungsdienste und App-Stores können ein Apple- oder Google-Konto erfordern; für diese Dienste gelten deren eigene Datenschutzrichtlinien.</p>
 <h3>Kontakt</h3><p>Bei Fragen zum Datenschutz: <a href="mailto:lab42@tutamail.com">lab42@tutamail.com</a></p>
+<p class="meta"><time datetime="2026-10-19">2026-10-19</time></p></section>
+<section lang="nl" data-lang="nl" hidden><h2>Nederlands</h2>
+<h3>Privacy</h3><p>Lab 42 respecteert je privacy. MyFigBox bevat geen advertenties, gedragsanalyses of tracking. Gegevens over je verzameling worden op je apparaat opgeslagen. Ze worden niet naar servers van Lab 42 verzonden en worden niet gebruikt voor advertenties of profilering.</p>
+<h3>Gegevens over je verzameling</h3><p>Informatie over je verzameling (figuren die je bezit of zoekt, favorieten, aantallen, prijzen, datums en opmerkingen) wordt lokaal op je apparaat opgeslagen.</p>
+<h3>Back-up en herstel</h3><p>Je kunt MyFigBox gebruiken zonder online back-up of synchronisatie.</p>
+<p>Op iOS kunnen je gegevens tussen compatibele Apple-apparaten worden gesynchroniseerd en hersteld als je ervoor kiest iCloud te gebruiken.</p>
+<p>Op Android kunnen daarvoor in aanmerking komende MyFigBox-gegevens automatisch door Google worden opgeslagen en hersteld als apparaatback-ups in de Android-instellingen zijn ingeschakeld, bijvoorbeeld bij het instellen van een ander apparaat.</p>
+<p>Deze diensten zijn optioneel en afhankelijk van de instellingen van je apparaat en account. Lab 42 heeft geen toegang tot de inhoud van deze back-ups.</p>
+<h3>Camera</h3><p>De camera wordt uitsluitend gebruikt om codes op geschikte verpakkingen te scannen en figuren te herkennen. MyFigBox slaat geen camerabeelden op en verzendt deze niet.</p>
+<h3>Aankopen en promotiecodes</h3><p>In-appaankopen en eventuele promotiecodes worden op iOS afgehandeld door Apple (App Store) en op Android door Google (Google Play). Lab 42 verzamelt of bewaart geen betaalgegevens.</p>
+<h3>Accounts en diensten van derden</h3><p>Een MyFigBox-account is niet vereist. Voor back-updiensten en appwinkels kan een Apple- of Google-account nodig zijn. Op deze diensten zijn de eigen privacyverklaringen van Apple en Google van toepassing.</p>
+<h3>Contact</h3><p>Voor vragen over privacy: <a href="mailto:lab42@tutamail.com">lab42@tutamail.com</a></p>
 <p class="meta"><time datetime="2026-10-19">2026-10-19</time></p></section>
 <section data-lang="pl" hidden="" lang="pl"><h2>Polski</h2>
 <h3>Prywatność</h3><p>Lab 42 szanuje Twoją prywatność. MyFigBox nie zawiera reklam, narzędzi analizy zachowań ani mechanizmów śledzenia. Informacje o Twojej kolekcji są przechowywane na Twoim urządzeniu. Nie są przesyłane na serwery Lab 42 ani wykorzystywane do celów reklamowych lub profilowania.</p>
@@ -250,7 +263,7 @@
   const selector = document.getElementById('language');
   const subtitle = document.getElementById('policy-subtitle');
   const languageLabel = document.getElementById('language-label');
-  const uiTexts = {"fr":["Politique de confidentialité","Langue"],"en":["Privacy Policy","Language"],"de":["Datenschutzerklärung","Sprache"],"pl":["Polityka prywatności","Język"],"it":["Informativa sulla privacy","Lingua"],"es":["Política de privacidad","Idioma"],"pt-PT":["Política de privacidade","Idioma"],"pt-BR":["Política de privacidade","Idioma"],"ja":["プライバシーポリシー","言語"],"ko":["개인정보 처리방침","언어"],"sv":["Integritetspolicy","Språk"],"no":["Personvernerklæring","Språk"],"is":["Persónuverndarstefna","Tungumál"],"da":["Privatlivspolitik","Sprog"],"fi":["Tietosuojakäytäntö","Kieli"]};
+  const uiTexts = {"fr":["Politique de confidentialité","Langue"],"en":["Privacy Policy","Language"],"de":["Datenschutzerklärung","Sprache"],"nl":["Privacyverklaring","Taal"],"pl":["Polityka prywatności","Język"],"it":["Informativa sulla privacy","Lingua"],"es":["Política de privacidad","Idioma"],"pt-PT":["Política de privacidade","Idioma"],"pt-BR":["Política de privacidade","Idioma"],"ja":["プライバシーポリシー","言語"],"ko":["개인정보 처리방침","언어"],"sv":["Integritetspolicy","Språk"],"no":["Personvernerklæring","Språk"],"is":["Persónuverndarstefna","Tungumál"],"da":["Privatlivspolitik","Sprog"],"fi":["Tietosuojakäytäntö","Kieli"]};
   const sections = document.querySelectorAll('section[data-lang]');
   const supported = Array.from(selector.options, option => option.value);
   const normalize = value => {
